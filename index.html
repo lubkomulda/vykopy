@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výkopové práce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        .services, .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service, .gallery img {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .service img, .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            border: 0;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Výkopové práce</h1>
+        <p>Profesionální služby v oblasti výkopových prací</p>
+    </header>
+
+    <div class="container">
+        <h2>Naše služby</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200" alt="Zemní práce">
+                <h3>Zemní práce</h3>
+                <p>Provádíme kvalitní zemní práce pro malé i velké projekty.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200" alt="Pokládka inženýrských sítí">
+                <h3>Pokládka inženýrských sítí</h3>
+                <p>Spolehlivá pokládka vodovodů, kanalizací a dalších sítí.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200" alt="Demoliční práce">
+                <h3>Demoliční práce</h3>
+                <p>Efektivní demolice staveb a likvidace stavebního odpadu.</p>
+            </div>
+        </div>
+
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200" alt="Fotka 1">
+            <img src="https://via.placeholder.com/300x200" alt="Fotka 2">
+            <img src="https://via.placeholder.com/300x200" alt="Fotka 3">
+        </div>
+
+        <h2>Ceník</h2>
+        <ul>
+            <li>Zemní práce: od 500 Kč/hod</li>
+            <li>Pokládka sítí: od 800 Kč/m</li>
+            <li>Demoliční práce: od 1000 Kč/hod</li>
+        </ul>
+
+        <h2>O nás</h2>
+        <p>Jsme profesionální tým s více než 10 lety zkušeností v oblasti výkopových prací. Nabízíme rychlé, efektivní a kvalitní služby.</p>
+
+        <h2>Kontakt</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Jméno:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Zpráva:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Odeslat</button>
+        </form>
+
+        <h2>Kde nás najdete</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093745!2d144.9630579153188!3d-37.81362797975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5777d7c9c45b255!2sGoogle!5e0!3m2!1sen!2sau!4v1631061776312!5m2!1sen!2sau" 
+            allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Výkopové práce. Všechna práva vyhrazena.</p>
+    </footer>
+</body>
+</html>
